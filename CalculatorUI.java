@@ -9,7 +9,7 @@ public class CalculatorUI {
     private String operator = "";
     private boolean newInput = true;
 
-    public CalculatorUI() { // Fixed constructor name
+    public CalculatorUI() {
         frame = new JFrame("Smart Java Calculator");
         frame.setSize(350, 450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,9 +24,9 @@ public class CalculatorUI {
 
         // Buttons
         String[] buttonLabels = {
-            "7", "8", "9", "/", 
-            "4", "5", "6", "*", 
-            "1", "2", "3", "-", 
+            "7", "8", "9", "/",
+            "4", "5", "6", "*",
+            "1", "2", "3", "-",
             "0", ".", "C", "+",
             "="
         };
@@ -90,6 +90,5 @@ public class CalculatorUI {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(CalculatorUI::new);
-        System.out.println("hello"); 
     }
 }
